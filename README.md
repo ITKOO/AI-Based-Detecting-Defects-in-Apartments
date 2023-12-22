@@ -1,12 +1,12 @@
 # 관리하자, 아파트 하자 관리 서비스
 
-![1](https://github.com/ITKOO/AI-Based-Detecting-Defects-in-Apartments/assets/31758135/0dd28da5-78ae-4c02-8ac4-456e7215321b)
+![image](https://github.com/ITKOO/AI-Based-Detecting-Defects-in-Apartments/assets/31758135/f0e47296-e110-4a39-9648-4f4405ee25be)
 
-- 서비스 링크 :
-- 시연 영상 : 
-- 모델 colab 링크 : https://colab.research.google.com/drive/1CKfAUHTwjHNii0wPwI2W3q1Y15Zg2-W4?usp=sharing
-- 웹페이지 소스 코드 :
 
+- <a href="http://openai.itkoo.kr">서비스 링크</a>
+- <a href="">시연 영상</a>
+- <a href="https://colab.research.google.com/drive/1CKfAUHTwjHNii0wPwI2W3q1Y15Zg2-W4?usp=sharing">AI 모델 Colab 링크</a>
+- <a href="https://github.com/ITKOO/AI-Based-Detecting-Defects-in-Apartments-Website">웹사이트 Github Repository</a>
 <br>
 
 ## 팀원 정보
@@ -105,8 +105,8 @@ journey
      yolov5에 필요한 라이브러리 다운로드: 5
     section 모델 훈련 및 객체 감지
      yolov5 모델 훈련: 1: 10분 이상 소요
-     훈련된 모델로 객체 감지: 5
-     모델 내보내기(TensorFlow Lite): 5
+     훈련된 모델로 객체 감지: 4
+     모델 내보내기(TensorFlow Lite): 4
 
 ```
 
@@ -115,7 +115,7 @@ journey
 
 ``` python
 # 사전 조건 : 테스트 할 사진 데이터 ex) 타일 줄눈 탈락
-test_img = "https://image.ohou.se/i/bucketplace-v2-development/uploads/advices/photos/156631004901716305.jpg?gif=1&w=480"
+!curl -L "https://image.ohou.se/i/bucketplace-v2-development/uploads/advices/photos/156631004901716305.jpg?gif=1&w=600" -o /content/test.jpg
 
 # 1. Roboflow(데이터셋) 다운로드 및 압축 해제
 !curl -L "https://app.roboflow.com/ds/mogUAIJzK6?key=YH3zaHQok6" > roboflow.zip; unzip roboflow.zip; rm roboflow.zip
@@ -147,7 +147,7 @@ test_img = "https://image.ohou.se/i/bucketplace-v2-development/uploads/advices/p
 
 임계값 0.5, 감지한 사진 결과는 /yolob5/runs/detect/exp 폴더에 저장
 """
-!python detect.py --weights ./runs/train/FindDefect_results/weights/best.pt --conf 0.5 --source test_img
+!python detect.py --weights ./runs/train/FindDefect_results/weights/best.pt --conf 0.5 --source /content/test.jpg
 
 # 7. 경로 이동
 %cd /content/yolov5

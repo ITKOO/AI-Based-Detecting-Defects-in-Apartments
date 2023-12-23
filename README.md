@@ -4,7 +4,6 @@
 
 
 - <a href="http://openai.itkoo.kr">서비스 링크</a>
-- <a href="">시연 영상</a>
 - <a href="https://colab.research.google.com/drive/1CKfAUHTwjHNii0wPwI2W3q1Y15Zg2-W4?usp=sharing">AI 모델 Colab 링크</a>
 - <a href="https://github.com/ITKOO/AI-Based-Detecting-Defects-in-Apartments-Website">웹사이트 Github Repository</a>
 <br>
@@ -161,4 +160,9 @@ journey
 <br>
 
 ## 결과
-- 데이터의 수가 증가할 때마다 변화하는 그래프
+![image](https://github.com/ITKOO/AI-Based-Detecting-Defects-in-Apartments/assets/31758135/fc1bb0d2-809d-471a-b51a-ef4103bea582)
+![image](https://github.com/ITKOO/AI-Based-Detecting-Defects-in-Apartments/assets/31758135/33d82292-9032-4d1f-8bc1-74d336c1f6e6)
+![image](https://github.com/ITKOO/AI-Based-Detecting-Defects-in-Apartments/assets/31758135/add84fe5-13f5-47e4-9787-379f0cd7fdaa)
+
+
+
